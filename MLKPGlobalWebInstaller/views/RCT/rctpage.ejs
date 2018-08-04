@@ -1,0 +1,65 @@
+<% include ../layouts/userinfo %>
+<% include ../layouts/modalinfo %>
+<% include ../layouts/modalsess %>
+<form id="frmRCTpage">
+  <div class="default-page" style="padding: 20px; margin-left: 15%;" >
+    <div class="col-md-12 hdInfo" id="hdInfoAni">
+        <div class="form-group">
+          <label><b><h4>Branch Information</h4></b></label>
+        </div>
+        <div class="form-group row" style="margin-bottom: 8px; padding-left: 100px;">
+            <label class="col-md-3">Branch Name:</label>
+            <div class="col-md-7">
+                <select id="selectbranchname" class="form-control caps">
+                    <option selected>Select Branch</option>
+                    <% for (let i = 0; i < data.length; i++) { %>
+                    <option value="<%= data[i].branchcode %>">
+                        <%= data[i].branchname %>
+                    </option>
+                    <% } %>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row" style="margin-bottom: 8px;  padding-left: 100px;">
+            <label class="col-md-3">Branch Code:</label>
+            <div class="col-md-7">
+                <input type="text" name="rctbcode" class="form-control caps" id="bcodeidRCT" placeholder="Branch Code" name=""  readonly="true">
+            </div>
+        </div>
+        <div class="form-group row" style="margin-bottom: 8px;  padding-left: 100px;">
+            <label class="col-md-3">Branch Manager:</label>
+            <div class="col-md-7">
+                <input type="text" name="rctbmanager" class="form-control caps" id="bmanageridRCT" placeholder="Branch Manager" name=""  readonly="true">
+            </div>
+        </div>
+        <div class="form-group row" style="margin-bottom: 8px; padding-left: 100px;">
+            <label class="col-md-3">Product Key:</label>
+            <div class="col-md-7">
+                <input type="text" name="pkeyid" class="form-control caps" id="pkeyidRCT" placeholder="Product Key">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <fieldset class="fieldset">
+                <legend class="legend">Download for Branches</legend>
+                <center>
+                    <button type="button" disabled = "true" class="btn btn-default col-md-4 dlbtn" id="id32bit">
+                        <span>MLKP Global Installer</span><br/>
+                        <span style="font-size: 10px">32 bit.msi</span>
+                    </button>
+                    <button type="button" disabled = "true" class="btn btn-default col-md-4 dlbtn" id="id64bit">
+                        <span>MLKP Global Installer</span><br/>
+                        <span style="font-size: 10px">64 bit.msi</span>
+                    </button>
+                </center>
+            </fieldset>
+        </div>
+    </div>
+</div>
+</form>
+
+<script>
+        console.log('<%= data %>');
+        console.log('<%= typeof data.branchname %>');
+        console.log('<%= data.branchcode %>');
+</script>

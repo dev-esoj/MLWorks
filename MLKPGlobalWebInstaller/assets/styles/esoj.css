@@ -1,0 +1,201 @@
+.centerthings {
+    color: black; padding-top: 100px;
+  }
+  
+  .loginInfo {
+    width: 35%;
+    background: white;
+    margin: 0;
+    padding: 15px;
+    box-shadow: 0px 0px 5px;
+    max-width: 35%; 
+    margin: 0 auto;
+    max-height: 35%;
+    height: 260px;
+  }
+
+.loginbtn {
+    /* width: 150px;  */
+    background: #d6061b !important; 
+    color: white; 
+    /* border-radius: 20px; */
+    box-shadow: 0px 0px 5px #d6061b !important;
+}
+
+.logoutbtn {
+  /* width: 100px;  */
+  background: #d6061b !important; 
+  color: white;
+  margin-left: 225px; 
+}
+
+.caps{
+text-transform: uppercase;
+}
+
+.btneff{
+  background-color:white;
+  color:black;
+  box-shadow: 0px 0px 5px black !important;
+}
+
+.btneff:hover:enabled{
+  opacity: 1;
+  cursor: pointer;
+  color:white;
+  text-decoration-color:#d6061b;
+  transition: 0.5s all ease;
+  background-color: #d6061b;
+}
+
+.logoutbtneff{
+  color:white;
+  background-color: #d6061b;
+  margin-right: 35px;
+}
+
+.logoutbtneff:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.fieldset { 
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 1em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px solid black;
+}
+.legend{
+  display: block;
+  width: auto;
+  padding: 0px 20px;
+  max-width: 100%;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+
+}
+
+
+
+
+.eyeicon{
+  margin-top: 5px;
+  position: absolute;
+  margin-left: -40px;
+  font-size: 30px;
+  color: #d6061b;
+}
+.eyehide{
+  display: none !important;
+}
+.eyeshow{
+  display: block !important;
+}
+.alignicon{
+  position: relative;
+  top: 2px;
+  font-size: 25px;
+}
+
+.logoutalignicon{
+  position: relative;
+  top: 2px;
+  font-size: 20px;
+}
+
+.pkinfo{
+  background: white;
+  margin: 0;
+  padding: 15px;
+  box-shadow: 0px 0px 2px;
+  margin: 0 auto;
+  float: left;
+  padding-top: 30px;
+}
+
+.hdInfo {
+  max-width: 100%;
+  background: white;
+  box-shadow: 0px 0px 2px;
+  margin: 0 auto;
+  float: left;
+  padding: 30px;
+  width: 85%;
+} 
+
+
+.pkey{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+.int{
+transition-duration: 0.5s;
+}
+
+.pint{
+  transition-duration: 0.2s;
+  }
+
+.hidepgUser{
+opacity: 0;
+margin: 0px;
+}
+
+.showpgUser{
+  margin-left: 50px;
+  opacity: 1;
+}
+
+.hidepgHD{
+  opacity: 0;
+  margin-left: -500px;
+}
+
+.showpgHD{
+    margin-right: -50px;
+    opacity: 1;
+}
+
+.hid_frm { display: none; }
+
+.borderpkey{
+  padding-left:10px; 
+  width: 650px; 
+  height:70px; 
+  border: solid 1px !important;
+}
+
+.stickyfooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #d6061b !important; 
+  color: white;
+  padding:10px;
+}
+.iconsize{
+  height: 45px;
+  width: 50px;
+}
+
+.dlbtn{
+  color: black;
+  height: 80px;
+  background-color: #86b8ea;
+}
+
+.dlbtn:hover:enabled{
+  color: white;
+  height: 80px;
+  background-color: #1575ad;
+}

@@ -1,0 +1,56 @@
+  <!-- Product Key Informatiom -->
+  <% include ../layouts/modalinfo %>
+  <% include ../layouts/modalsess %>
+<div class="viewproductkey">
+    <div class="form-group">
+        <label><b><h4>Product Key Information</h4></b></label>
+        <button type="button" class="btn btn-default col-md-2 float-right btneff" id="backpkey" style="width: 86px; padding-left: 3px;">
+                <i class="fa fa-arrow-left alignicon"></i>
+                <span>Back</span></button>
+    </div>
+    <div class="form-group row" style="margin-bottom: 8px;">
+        <label class="col-md-3">Zone:</label>
+        <div class="col-md-5">
+            <select id="selectzonename" class="form-control caps">
+                <option selected>Select Zone</option>
+                <option></option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row" style="margin-bottom: 8px;">
+        <label class="col-md-3">Branch Code:</label>
+        <div class="col-md-5">
+            <input type="text" class="form-control caps" id="bbcodeviewpkey" placeholder="Branch Code" name="">
+        </div>
+    </div>
+    <div class="form-group row" style="margin-bottom: 8px;">
+        <label class="col-md-3">Branch Name:</label>
+        <div class="col-md-5">
+            <input type="text" readonly="true" class="form-control caps" id="bnameviewpkey" placeholder="Branch Name" name="">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-md-3">Branch Manager:</label>
+        <div class="col-md-5">
+            <input type="text" readonly="true" class="form-control caps" id="bmanviewpkey" placeholder="Branch Manager" name="">
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="button" id="vviewpkey" class="btn btn-default col-md-2 btneff" style="width: 86px; padding-left: 8px;">
+                <i class="fa fa-info-circle alignicon"></i>
+                <span>View</span></button>
+        <button type="button" id="vclearpkey" class="btn btn-default col-md-2 btneff" style="width: 86px; padding-left: 3px;">
+                <i class="fa fa-times-circle alignicon"></i>
+                <span>Clear</span></button>
+    </div>
+    <div class="form-group" >
+        <div class="table-responsive border">
+            <div id="productkey" style="padding-left: 10px;">
+                <b>Product Key:</b>
+            </div>
+            <div class="pkey">
+                <center><b><p id="vvproductkey"></p></b></center>
+            </div>
+        </div>
+    </div>
+</div>

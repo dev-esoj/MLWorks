@@ -1,0 +1,74 @@
+<% include ../layouts/userinfo %>
+<% include ../layouts/modalinfo %>
+<% include ../layouts/modalsess %>
+<form id="frmSerialCode">
+  <div class="default-page" style="padding: 20px; margin-left: 15%;" >
+    <div class="col-md-12 hdInfo" id="hdInfoAni">
+        <div class="form-group">
+          <label><b><h4>Generate Serial Code Information</h4></b></label>
+        </div>
+        <div class="form-group row" style="margin-bottom: 8px;">
+            <label class="col-md-3">RCT Username:</label>
+            <div class="col-md-5">
+                <input type="text" name="rctuname" class="form-control caps" id="rctunameid" placeholder="RCT Username">
+            </div>
+        </div>
+        <div class="form-group row" style="margin-bottom: 8px;">
+            <label class="col-md-3">RCT Name:</label>
+            <div class="col-md-5">
+                <input type="text" name="rctname" class="form-control caps" id="rctnameid" placeholder="RCT Name"  readonly="true">
+            </div>
+        </div>
+        <div class="form-group row" style="margin-bottom: 8px;">
+            <label class="col-md-3">Branch Name:</label>
+            <div class="col-md-5">
+                <select id="selectbname" name="rctbname" class="form-control caps">
+                    <option value="" selected>Select Branch...</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row" style="margin-bottom: 8px;">
+            <label class="col-md-3">Branch Code:</label>
+            <div class="col-md-5">
+                <input type="text" name="rctbcode" class="form-control caps" id="rctbcodeid" placeholder="Branch Code" name=""  readonly="true">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3">Branch Manager:</label>
+            <div class="col-md-5">
+                <input type="text" name="rctbmanager" class="form-control caps" id="rctbmanagerid" placeholder="Branch Manager" name=""  readonly="true">
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="button" class="btn btn-default col-md-4 btneff" id="viewpkey">
+                    <i class="fa fa-info-circle alignicon"></i>
+                    <span>View Existing Product Key</span>
+            </button>
+            <button type="button" disabled="disabled" class="btn btn-default col-md-2 btneff" id="genpkey">
+                    <i class="fa fa-angle-double-down alignicon"></i>
+                    <span>Generate</span></button>
+            <button type="button" disabled="disabled" class="btn btn-default col-md-2 btneff" id="savepkey" style="margin-left: 167px; width: 86px; padding-left: 8px;">
+                    <i class="fa fa-save alignicon"></i>
+                    <span>Save</span>
+            </button>
+            <button type="button" disabled="disabled" class="btn btn-default col-md-2 btneff" id="clearpkey" style="width: 86px; padding-left: 3px;">
+                    <i class="fa fa-times-circle alignicon"></i>
+                    <span>Clear</span>
+            </button>
+        </div>
+        <div class="form-group">
+            <div class="table-responsive border">
+                <div style="padding-left: 10px;">
+                    <b>Product Key:</b>
+                </div>
+                <div class="pkey">
+                    <center><p id="productkey"></p></center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hid_frm col-md-8 hdInfo" id="frmViewPkey">
+        <%- partial('viewproductkey.ejs') %>
+    </div>
+</div>
+</form>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Global Web Installer</title>
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <!--
+        Stylesheets and Preprocessors
+        ==============================
+
+        You can always bring in CSS files manually with `<link>` tags, or asynchronously
+        using a solution like AMD (RequireJS).  Or, if you like, you can take advantage
+        of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+        By default, stylesheets from your `assets/styles` folder are included
+        here automatically (between STYLES and STYLES END). Both CSS (.css) and LESS (.less)
+        are supported. In production, your styles will be minified and concatenated into
+        a single file.
+
+        To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+
+            + Change the order of your CSS files
+            + Import stylesheets from other directories
+            + Use a different or additional preprocessor, like SASS, SCSS or Stylus
+    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <!--STYLES-->
+    <link rel="stylesheet" href="/styles/bootstrap-grid.css">
+    <link rel="stylesheet" href="/styles/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/styles/bootstrap-reboot.css">
+    <link rel="stylesheet" href="/styles/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="/styles/bootstrap.css">
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/esoj.css">
+    <link rel="stylesheet" href="/styles/fontawesome.css">
+    <link rel="stylesheet" href="/styles/sheldon.css">
+    <!--STYLES END-->
+  </head>
+ 
+<body style="background-color: white" style="font-family: Courier New !important; font-size: 0.3cm !important;">
+<header>
+    <div class="col-md-12" style="background-color:#d6061b; padding: 10px; color: white;">
+      <h4>MLKP Global Web Installer</h4>
+   </div>
+</header>
+
+<div class="container" >
+    <%- body %>
+</div>
+
+
+<footer class="stickyfooter">
+  <div class="col-md-12 row">
+      <div class="col-md-6">
+        <h6>Copyright © M. Lhuillier Financial Services, Inc. </h6>
+      </div>
+      <div class="col-md-6">
+            <h6 style="float: right;">All Rights Reserved.</h6>
+      </div>
+  </div>
+</footer>
+</body>
+  <script src="/dependencies/sails.io.js"></script>
+  <script src="/js/jquery-3.1.1.js"></script>
+  <script src="/js/jquery-3.1.1.min.js"></script>
+  <script src="/js/jquery.freezeheader.js"></script>
+  <script src="/js/jquery.validate-vsdoc.js"></script>
+  <script src="/js/jquery.validate.js"></script>
+  <script src="/js/jquery.validate.min.js"></script>
+  <script src="/js/jquery.validate.unobtrusive.js"></script>
+  <script src="/js/jquery.validate.unobtrusive.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+
+  <script src="/js/z-login.js"></script>
+  <script src="/js/z-rct.js"></script>
+  <script src="/js/z-helpdesk.js"></script>
+  
+</html>

@@ -1,0 +1,56 @@
+.rctpage {
+    background: white;
+    margin: 0;
+    border: 1px solid;
+    padding: 15px;
+    box-shadow: 5px 4px 20px red;
+    margin: 0 auto;
+    float: left;
+    height: 500px;
+    padding-top: 30px;
+  } 
+.col-md-9 rctpage {
+    width: 810px;
+    margin: auto;
+}
+
+.registerbtn {
+    width: 200px; 
+    color: white; 
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px green !important;
+    margin: auto;
+    margin-right: 40px;
+}
+.mainpg {
+    color: black; 
+    padding-top: 50px;
+  }
+.binfo {
+    width: 300px;
+    display: block;
+    padding: 6px 12px;
+    color: #555555;
+    border: 1px solid #cccccc; 
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); 
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+/* .logoutbtn {
+    width: 150px; 
+    background: #d6061b !important; 
+    color: white; 
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px #d6061b !important;
+    float: right;
+} */
+.usricon {
+    position: relative;
+    font-size: 35px;
+    color: #b41818;
+}
+hr {
+    margin-top: 50px;
+    border: 0;
+    border-top: 1px solid lightgray;
+}
